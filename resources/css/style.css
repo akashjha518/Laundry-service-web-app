@@ -1,0 +1,471 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* background-color: white; */
+    color: black;
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+.nav-back {
+    background-color: rgb(242, 249, 249);
+    padding-bottom: 20px;
+}
+
+.navbar {
+    display: inline-flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-top: 20px;
+    width: 90%;
+}
+
+.logo {
+    align-content: center;
+
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+    /* float: left; */
+}
+
+.navbar ul {
+    list-style: none;
+    display: inline-flex;
+    margin: 20px 0 0 20px;
+
+}
+
+.navbar ul li {
+    margin-right: 30px;
+
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(135, 137, 140);
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+
+}
+
+.navbar ul li a:hover {
+    border-bottom: 2px solid skyblue;
+
+}
+
+.navbar .user {
+    /* float: right; */
+    align-content: center;
+    border: 2px solid rgb(196, 239, 237);
+    padding: 0 15px;
+    border-radius: 15px;
+    background-color: rgb(196, 239, 237);
+    transition: background-color 0.2s;
+
+
+
+}
+
+.navbar .user a {
+
+    text-decoration: none;
+    color: rgb(17, 174, 236);
+}
+
+.navbar .user:hover {
+    background-color: rgb(176, 243, 213);
+}
+
+.row {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.section-hero {
+    margin-top: 5%;
+}
+
+.hero-content h1 {
+    font-size: 300%;
+}
+
+.hero-content h1 span {
+    color: rgb(0, 187, 255);
+}
+
+.hero-content p {
+    font-size: 100%;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    margin-top: 20px;
+}
+
+.hero-content .btn {
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 15px;
+    border: 1px solid rgb(86, 190, 255);
+    border-radius: 10px;
+    background-color: rgb(86, 190, 255);
+    color: white;
+    display: flex;
+    align-items: center;  /* vertical alignment */
+    justify-content: center; /* center content */
+    gap: 5px;
+    transition: background-color 0.2s;
+}
+.hero-content .btn ion-icon{
+    color: white;
+}
+
+.hero-content .btn:hover{
+        background-color: rgb(27, 164, 249);
+
+}
+
+.hero-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img img {
+    height: 350px;
+    width: auto;
+    /* margin-left: 20%; */
+}
+
+.hero-achivements {
+    margin-top: 5%;
+    width: 100%;
+    /* margin-top: 310px; */
+    /* margin: 0 auto; */
+    background-color: rgb(81, 158, 253);
+    padding: 20px;
+
+}
+
+.hero-achivements h2,
+.hero-achivements p {
+    text-align: center;
+    /* color: white; */
+    color: black;
+}
+
+.hero-achivements h2 {
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.hero-achivements p {
+    font-size: 30px;
+}
+
+.hero-achivements p span {
+    font-size: 15px;
+    display: block;
+}
+
+.section-services {
+    padding: 5%;
+    background-color: #e5e7eb;
+}
+
+.container {
+    background-color: white;
+    padding: 3%;
+    border-radius: 20px;
+}
+
+.services-list {
+    margin-top: 3%;
+
+
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background: #e5e7eb;
+    margin-top: 5%;
+}
+
+.booking-form {
+    margin-top: 5%;
+}
+
+.cart-note {
+    margin-top: 5%;
+}
+
+/* hr {
+    border: none;
+    height: 1px;
+    background: #ddd;
+    margin: 20px 0;
+} */
+
+.service-action .btn {
+    /* margin-top: 20px; */
+    padding: 4%;
+    font-size: 10px;
+    border: 1px solid rgb(194, 203, 208);
+    border-radius: 10px;
+    background-color: rgba(194, 203, 208, 0.547);
+    color: black;
+    display: inline-block;
+    text-align: center;
+    display: flex;
+    align-items: center;  /* vertical alignment */
+    justify-content: center; /* center content */
+    gap: 5px;
+    width: 150px;
+    
+}
+
+.btn-add ion-icon{
+    font-size: 14px;
+    /* padding-top: 10%; */
+}
+
+.service-item .service-info,
+.service-item .service-action {
+    margin-top: 2%;
+}
+
+.service-action {
+    display: flex;
+    justify-content: flex-end;
+    /* moves button to right */
+}
+
+
+.cart-summary h2 {
+    text-align: center;
+    margin-top: 2%;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.cart-table {
+    width: 100%;
+    margin-top: 5%;
+    justify-content: space-between;
+    padding: 2%;
+    border-collapse: collapse;
+
+}
+
+.cart-table thead tr th,
+.cart-table tbody tr td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #e5e7eb;
+
+
+}
+
+.cart-table tbody tr:last-child td {
+    border-bottom: 1px solid transparent;
+}
+
+.cart-table thead tr th {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.cart-table tbody tr td {
+    font-size: 15px;
+}
+
+.total-section {
+    border-top: 1px solid #e5e7eb;
+    padding-top: 2%;
+    margin-top: 10%;
+    font-size: 20px;
+}
+
+.total-section strong {
+    text-align: right;
+
+}
+
+.booking-form h3 {
+    padding-bottom: 5%;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.form-group label {
+    font-size: 15px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 5%;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+}
+
+.book-btn {
+    width: 100%;
+    padding: 5%;
+    background-color: rgb(71, 156, 242);
+    font-size: 16px;
+    color: whitesmoke;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-weight: 600;
+    margin-top: 3%;
+}
+
+.feature-card {
+    display: grid;
+    margin-top: 10%;
+}
+
+.feature-card img {
+    width: 100px;
+    justify-self: center;
+
+}
+
+.feature-card strong {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 2%;
+    letter-spacing: 1%;
+    word-spacing: 2%;
+}
+
+.feature-card span {
+    justify-self: center;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 1%;
+    word-spacing: 2%;
+    width: 78%;
+    margin: 2% 0;
+    color: rgba(66, 62, 62, 0.412);
+}
+
+.section-newsletter {
+    margin-top: 5%;
+    padding: 5%;
+    background-color: rgb(0, 153, 255);
+}
+
+.subscribe-text strong {
+    color: white;
+    font-size: 225%;
+    font-weight: 500;
+    vertical-align: middle;
+}
+
+.subscribe-div input {
+    display: flex;
+    background-color: rgb(36, 164, 249);
+    width: 100%;
+    font-size: 150%;
+    margin: 2%;
+    padding: 2%;
+    color: rgb(255, 255, 255);
+    border: rgb(36, 164, 249);
+
+}
+
+.email-div input {
+    width: 100%;
+    font-size: 150%;
+    margin: 2%;
+    padding: 2%;
+    border: rgb(36, 164, 249);
+    background-color: rgb(36, 164, 249);
+    color: rgb(255, 255, 255);
+
+}
+
+.subscribe-div input::placeholder,
+.email-div input::placeholder {
+    color: rgba(255, 255, 255, 0.588);
+}
+
+.subscribe-div input[type="button"]{
+    color: rgb(0, 153, 255);
+    background-color: white;
+    transition: background-color 0.2s, color 0.2s;
+}
+.subscribe-div input[type="button"]:hover{
+    color: rgb(0, 98, 255);
+    background-color: rgb(245, 242, 242);
+}
+
+.section-footer{
+    padding: 5%;
+}
+.section-footer .row .col .logo{
+    margin-bottom: 2%;
+}
+
+.footer-aboutus, .footer-links, .footer-contact, .footer-social-links{
+    display: grid;
+}
+
+.footer-aboutus strong, .footer-links strong, .footer-contact strong, .footer-social-links strong{
+    margin-bottom: 2%;
+    font-size: 100%;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.877);
+}
+
+.footer-aboutus span{
+    color: rgba(0, 0, 0, 0.438);
+    font-size: 80%;
+    letter-spacing: 1%;
+    word-spacing: 2%;
+}
+
+.footer-links a{
+color: rgba(0, 0, 0, 0.438);
+    font-size: 80%;
+    text-decoration: none;
+    margin-bottom: 1%;
+    width: fit-content;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.footer-contact a{
+    color: rgba(0, 0, 0, 0.438);
+    font-size: 80%;
+    text-decoration: none;
+    margin-bottom: 1%;
+    width: fit-content;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.footer-contact a:hover, .footer-links a:hover{
+    border-bottom: 2px solid skyblue;
+}
+
+.footer-social-links div a{
+    text-decoration: none;
+    margin: 0 1%;
+    color: rgb(0, 0, 0);
+    transition: color 0.2s;
+}
+.footer-social-links div a:hover{
+    color: rgb(0, 140, 255);
+}
