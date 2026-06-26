@@ -1,0 +1,200 @@
+@media only screen and (max-width:1800px) {
+    .hero-section {
+        justify-content: center;
+    }
+
+    .hero-content h1 {
+        font-size: 270%;
+    }
+
+    .hero-content h1 span {
+        color: rgb(0, 187, 255);
+    }
+
+    .hero-content p {
+        font-size: 100%;
+        letter-spacing: 1%;
+        word-spacing: 3%;
+        margin-top: 20px;
+    }
+
+    .hero-achivements {
+        margin-top: 5%;
+        width: 100%;
+        /* margin-top: 310px; */
+        /* margin: 0 auto; */
+        background-color: rgb(81, 158, 253);
+        padding: 20px;
+
+    }
+
+    .hero-achivements h2,
+    .hero-achivements p {
+        text-align: center;
+        /* color: white; */
+        color: black;
+    }
+
+    .hero-achivements h2 {
+        font-size: 40px;
+        font-weight: 300;
+    }
+
+    .hero-achivements p {
+        font-size: 25px;
+    }
+
+    .hero-achivements p span {
+        font-size: 10px;
+        display: block;
+    }
+
+    .service-icon,
+    .service-name,
+    .service-price,
+    .cart-note {
+        font-size: 18px;
+    }
+
+    .section-header {
+        font-size: 85%;
+    }
+
+    .cart-summary h2 {
+        font-size: 85%;
+    }
+
+    .cart-table-header {
+        padding: 10px 14px;
+        font-size: 85%;
+    }
+
+    .empty-content h3 {
+        margin: 0;
+        font-size: 17px;
+        font-weight: 500;
+    }
+
+    .empty-content p {
+        margin: 0;
+        color: #888;
+        font-size: 12px;
+    }
+
+    .empty-icon {
+        width: 40px;
+        height: 40px;
+        border: 2px solid #555;
+    }
+
+    .empty-icon ion-icon {
+        font-size: 85%;
+        color: #555;
+    }
+
+    .total-section span,
+    .total-section strong {
+        font-size: 70%;
+    }
+
+    .booking-form h3 {
+        font-size: 75%;
+    }
+
+    .form-group input {
+        width: 90%;
+        padding: 5%;
+    }
+
+    .book-btn {
+        width: 100%;
+        padding: 5%;
+        font-size: 70%;
+    }
+}
+
+@media only screen and (max-width:1245px){
+    .hero-section {
+        margin: 5%;
+    }
+
+    .hero-content h1 {
+        font-size: 250%;
+    }
+
+    .hero-content h1 span {
+        color: rgb(0, 187, 255);
+    }
+    .hero-img img {
+    height: 300px;
+    width: auto;
+    /* margin-left: 20%; */
+}
+
+    .hero-content p {
+        font-size: 100%;
+        letter-spacing: 1%;
+        word-spacing: 3%;
+        margin-top: 20px;
+    }
+
+    .hero-achivements {
+        margin-top: 5%;
+        width: 100%;
+        /* margin-top: 310px; */
+        /* margin: 0 auto; */
+        background-color: rgb(81, 158, 253);
+        padding: 20px;
+
+    }
+
+    .hero-achivements h2,
+    .hero-achivements p {
+        text-align: center;
+        /* color: white; */
+        color: black;
+    }
+
+    .hero-achivements h2 {
+        font-size: 40px;
+        font-weight: 300;
+    }
+
+    .hero-achivements p {
+        font-size: 25px;
+    }
+
+    .hero-achivements p span {
+        font-size: 10px;
+        display: block;
+    }
+    .empty-content h3 {
+        margin: 0;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .empty-content p {
+        margin: 0;
+        color: #888;
+        font-size: 10px;
+    }
+
+    .cart-table-header {
+        font-size: 65%;
+    }
+
+    .cart-summary{
+        overflow-y: hidden;
+        min-height:130px;
+    }
+
+    .empty-content{
+    min-height:120px;
+    }
+
+
+}
+
+@media only screen and (max-width:1078px){
+    
+}

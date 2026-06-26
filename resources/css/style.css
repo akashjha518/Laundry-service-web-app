@@ -94,6 +94,9 @@ html {
 .section-hero {
     margin-top: 5%;
 }
+.section-header{
+    font-size: 100%;
+}
 
 .hero-content h1 {
     font-size: 300%;
@@ -105,8 +108,8 @@ html {
 
 .hero-content p {
     font-size: 100%;
-    letter-spacing: 1px;
-    word-spacing: 3px;
+    letter-spacing: 1%;
+    word-spacing: 3%;
     margin-top: 20px;
 }
 
@@ -135,8 +138,7 @@ html {
 
 .hero-img {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row-reverse;
 }
 
 .hero-img img {
@@ -283,6 +285,57 @@ html {
     /* moves button to right */
 }
 
+.cart-empty{
+    display:flex;
+    flex-direction:column;
+}
+
+.cart-table-header{
+    display:grid;
+    grid-template-columns:60px 1fr 80px;
+    padding:12px 16px;
+    font-size:14px;
+    border-bottom:1px solid #e5e7eb;
+    color:#555;
+}
+
+.empty-content{
+    min-height:140px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    gap:10px;
+}
+
+.empty-icon{
+    width:60px;
+    height:60px;
+    border:3px solid #555;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.empty-icon ion-icon{
+    font-size:30px;
+    color:#555;
+}
+
+.empty-content h3{
+    margin:0;
+    font-size:20px;
+    font-weight:500;
+}
+
+.empty-content p{
+    margin:0;
+    color:#888;
+    font-size:14px;
+}
+
 
 .cart-summary h2 {
     text-align: center;
@@ -297,13 +350,14 @@ html {
     justify-content: space-between;
     padding: 2%;
     border-collapse: collapse;
+    height: auto;
 
 }
 
 .cart-table thead tr th,
 .cart-table tbody tr td {
     text-align: left;
-    padding: 10px;
+    padding: 1%;
     border-bottom: 1px solid #e5e7eb;
 
 
@@ -314,12 +368,12 @@ html {
 }
 
 .cart-table thead tr th {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 600;
 }
 
 .cart-table tbody tr td {
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .total-section {
@@ -341,7 +395,7 @@ html {
 }
 
 .form-group label {
-    font-size: 15px;
+    font-size:70%;
 }
 
 .form-group input {

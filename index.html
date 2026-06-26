@@ -3,8 +3,8 @@
 
 <head>
     <title>Laundary Service Web App</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="vendors/css/grid.css">
     <link rel="stylesheet" href="resources/css/style.css">
     <link rel="stylesheet" href="resources/css/responsive.css">
@@ -29,7 +29,7 @@
     </header>
 
     <section class="section-hero" id="hero">
-        <div class="row group">
+        <div class="row group hero-section">
             <div class="col span_1_of_2 hero-content ">
                 <h1>
                     Revitalize Your Clothes With Expert <span>Laundary Services!</span>
@@ -56,114 +56,117 @@
 
         <div class="row">
             <!-- Left Section -->
+
             <div class="col span_2_of_3 container">
+                <div class="summary-container">
+                    <div class="section-header">
+                        <h1>Our Services</h1>
+                        <p>Click On The Add To Cart Button To Add The Services To Your Cart</p>
+                    </div>
+                    <div class="divider"></div>
 
-                <div class="section-header">
-                    <h1>Our Services</h1>
-                    <p>Click On The Add To Cart Button To Add The Services To Your Cart</p>
+                    <div class="services-list">
+
+                        <!-- Service Item -->
+                        <div class=" row service-item section group">
+                            <div class="service-info col span_2_of_3">
+                                <span class="service-icon">👔</span>
+                                <span class="service-name">Dry Cleaning</span>
+                                <ion-icon name="ellipse-sharp"></ion-icon>
+                                <span class="service-price">₹200.00</span>
+                            </div>
+
+                            <div class="service-action col span_1_of_3">
+                                <button class="btn btn-add ">
+                                    <strong>Add Item </strong> <ion-icon name="add-circle-outline"></ion-icon>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="row service-item">
+                            <div class="service-info col span_2_of_3">
+                                <span class="service-icon">🧺</span>
+                                <span class="service-name">Wash & Fold</span>
+                                <ion-icon name="ellipse-sharp"></ion-icon>
+                                <span class="service-price">₹100.00</span>
+                            </div>
+
+                            <div class="service-action col span_1_of_3">
+                                <button class="btn btn-add ">
+                                    <strong>Add Item </strong> <ion-icon name="add-circle-outline"></ion-icon>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="row service-item">
+                            <div class="service-info col span_2_of_3">
+                                <span class="service-icon">🧹</span>
+                                <span class="service-name">Ironing</span>
+                                <ion-icon name="ellipse-sharp"></ion-icon>
+                                <span class="service-price">₹30.00</span>
+                            </div>
+
+                            <div class="service-action col span_1_of_3">
+                                <button class="btn btn-add ">
+                                    <strong>Add Item </strong> <ion-icon name="add-circle-outline"></ion-icon>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="service-item row">
+                            <div class="service-info col span_2_of_3">
+                                <span class="service-icon">💥</span>
+                                <span class="service-name">Stain Removal</span>
+                                <ion-icon name="ellipse-sharp"></ion-icon>
+                                <span class="service-price">₹500.00</span>
+                            </div>
+
+                            <div class="service-action col span_1_of_3">
+                                <button class="btn btn-add ">
+                                    <strong>Add Item </strong> <ion-icon name="add-circle-outline"></ion-icon>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="service-item row">
+                            <div class="service-info col span_2_of_3">
+                                <span class="service-icon">🧥</span>
+                                <span class="service-name">Leather & Suede Cleaning</span>
+                                <ion-icon name="ellipse-sharp"></ion-icon>
+                                <span class="service-price">₹999.00</span>
+                            </div>
+
+                            <div class="service-action col span_1_of_3">
+                                <button class="btn btn-add ">
+                                    <strong>Add Item </strong> <ion-icon name="add-circle-outline"></ion-icon>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="service-item row">
+                            <div class="service-info col span_2_of_3">
+                                <span class="service-icon">👰</span>
+                                <span class="service-name">Wedding Dress Cleaning</span>
+                                <ion-icon name="ellipse-sharp"></ion-icon>
+                                <span class="service-price">₹2800.00</span>
+                            </div>
+
+                            <div class="service-action col span_1_of_3">
+                                <button class="btn btn-add ">
+                                    <strong>Add Item </strong> <ion-icon name="add-circle-outline"></ion-icon>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section group"></div>
+                    <div class="divider"></div>
+                    <div class="cart-note">
+                        <ion-icon name="information-circle-outline"></ion-icon>
+                        <p>Add the items to the cart and book now</p>
+                    </div>
+
                 </div>
-                <div class="divider"></div>
-
-                <div class="services-list">
-
-                    <!-- Service Item -->
-                    <div class=" row service-item section group">
-                        <div class="service-info col span_2_of_3">
-                            <span class="service-icon">👔</span>
-                            <span class="service-name">Dry Cleaning</span>
-                            <ion-icon name="ellipse-sharp"></ion-icon>
-                            <span class="service-price">₹200.00</span>
-                        </div>
-
-                        <div class="service-action col span_1_of_3">
-                            <button class="btn btn-add ">
-                                <strong>Add Item </strong>  <ion-icon name="add-circle-outline"></ion-icon>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="row service-item">
-                        <div class="service-info col span_2_of_3">
-                            <span class="service-icon">🧺</span>
-                            <span class="service-name">Wash & Fold</span>
-                            <ion-icon name="ellipse-sharp"></ion-icon>
-                            <span class="service-price">₹100.00</span>
-                        </div>
-
-                        <div class="service-action col span_1_of_3">
-                            <button class="btn btn-add ">
-                                <strong>Add Item </strong>  <ion-icon name="add-circle-outline"></ion-icon>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="row service-item">
-                        <div class="service-info col span_2_of_3">
-                            <span class="service-icon">🧹</span>
-                            <span class="service-name">Ironing</span>
-                            <ion-icon name="ellipse-sharp"></ion-icon>
-                            <span class="service-price">₹30.00</span>
-                        </div>
-
-                        <div class="service-action col span_1_of_3">
-                            <button class="btn btn-add ">
-                                <strong>Add Item </strong>  <ion-icon name="add-circle-outline"></ion-icon>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="service-item row">
-                        <div class="service-info col span_2_of_3">
-                            <span class="service-icon">💥</span>
-                            <span class="service-name">Stain Removal</span>
-                            <ion-icon name="ellipse-sharp"></ion-icon>
-                            <span class="service-price">₹500.00</span>
-                        </div>
-
-                        <div class="service-action col span_1_of_3">
-                            <button class="btn btn-add ">
-                                <strong>Add Item </strong>  <ion-icon name="add-circle-outline"></ion-icon>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="service-item row">
-                        <div class="service-info col span_2_of_3">
-                            <span class="service-icon">🧥</span>
-                            <span class="service-name">Leather & Suede Cleaning</span>
-                            <ion-icon name="ellipse-sharp"></ion-icon>
-                            <span class="service-price">₹999.00</span>
-                        </div>
-
-                        <div class="service-action col span_1_of_3">
-                            <button class="btn btn-add ">
-                                <strong>Add Item </strong>  <ion-icon name="add-circle-outline"></ion-icon>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="service-item row">
-                        <div class="service-info col span_2_of_3">
-                            <span class="service-icon">👰</span>
-                            <span class="service-name">Wedding Dress Cleaning</span>
-                            <ion-icon name="ellipse-sharp"></ion-icon>
-                            <span class="service-price">₹2800.00</span>
-                        </div>
-
-                        <div class="service-action col span_1_of_3">
-                            <button class="btn btn-add ">
-                                <strong>Add Item </strong>  <ion-icon name="add-circle-outline"></ion-icon>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="section group"></div>
-                <div class="divider"></div>
-                <div class="cart-note">
-                    <ion-icon name="information-circle-outline"></ion-icon><p>Add the items to the cart and book now</p>
-                </div>
-
             </div>
 
             <!-- Right Section -->
@@ -174,39 +177,46 @@
 
                     <h2>Added Items</h2>
 
-                    <table class="cart-table">
-                        <thead>
-                            <tr>
-                                <th>S.No</th>
-                                <th>Service Name</th>
-                                <th>Price</th>
-                            </tr>
-                        </thead>
+                    <!-- Empty State -->
+                    <div class="cart-empty" id="emptyCart">
 
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Dry Cleaning</td>
-                                <td>₹200.00</td>
-                            </tr>
+                        <div class="cart-table-header">
+                            <span>S.No</span>
+                            <span>Service Name</span>
+                            <span>Price</span>
+                        </div>
 
-                            <tr>
-                                <td>2</td>
-                                <td>Ironing</td>
-                                <td>₹30.00</td>
-                            </tr>
+                        <div class="empty-content">
+                            <div class="empty-icon">
+                                <ion-icon name="cart-outline"></ion-icon>
+                            </div>
 
-                            <tr>
-                                <td>3</td>
-                                <td>Leather & Suede Cleaning</td>
-                                <td>₹999.00</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                            <h3>No Items Added</h3>
+                            <p>Add items to the cart from the services bar</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Cart Items -->
+                    <div class="cart-items" id="cartItems" style="display:none;">
+                        <table class="cart-table">
+                            <thead>
+                                <tr>
+                                    <th>S.No</th>
+                                    <th>Service Name</th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <!-- JS will append rows here -->
+                            </tbody>
+                        </table>
+                    </div>
 
                     <div class="total-section row section group">
                         <span class="col span_1_of_2">Total Amount</span>
-                        <strong class="col span_1_of_2">₹1229.00</strong>
+                        <strong class="col span_1_of_2">₹0</strong>
                     </div>
 
                 </div>
@@ -336,7 +346,7 @@
                         <a href="#" target="_blank"><ion-icon name="logo-x"></ion-icon></a>
                         <a href="#" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
                     </div>
-                    
+
 
                 </div>
             </div>
