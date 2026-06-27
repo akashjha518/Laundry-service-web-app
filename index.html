@@ -1,357 +1,408 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Laundary Service Web App</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laundry Service Web App</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="vendors/css/grid.css">
-    <link rel="stylesheet" href="resources/css/style.css">
+    <!-- <link rel="stylesheet" href="resources/css/style.css"> -->
     <link rel="stylesheet" href="resources/css/responsive.css">
+    <link rel="stylesheet" href="vendors/css/output.css">
 </head>
 
-<body>
-    <header class="nav-back">
-        <nav class="navbar">
-            <div class="logo">
-                <img src="resources/img/image.jpg" alt="logo">
+<body class="bg-slate-50 text-slate-900 font-sans">
+    <header class="sticky top-0 z-50 border-b border-white/60 bg-white/85 backdrop-blur-xl">
+        <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+            <a href="#hero" class="flex items-center gap-3">
+                <img src="resources/img/image.jpg" alt="Laundry service logo"
+                    class="h-11 w-11 rounded-2xl object-cover shadow-md">
+                <div class="leading-tight">
+                    <p class="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-700">FreshFold</p>
+                    <p class="text-xs text-slate-500">Laundry service</p>
+                </div>
+            </a>
+
+            <div class="hidden items-center gap-8 md:flex">
+                <a href="#hero" class="text-sm font-medium text-slate-600 transition hover:text-slate-900">Home</a>
+                <a href="#services" class="text-sm font-medium text-slate-600 transition hover:text-slate-900">Services</a>
+                <a href="#feature" class="text-sm font-medium text-slate-600 transition hover:text-slate-900">About Us</a>
+                <a href="#newsletter" class="text-sm font-medium text-slate-600 transition hover:text-slate-900">Contact Us</a>
             </div>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-            <div class="user">
-                <a href="#">Username</a>
-            </div>
+
+            <a href="#" class="hidden rounded-full border border-slate-200 bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-800 md:inline-flex">
+                Username
+            </a>
+            <a href="#" class="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-slate-200 bg-slate-900 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-800 md:hidden">
+                U
+            </a>
         </nav>
+        <div class="border-t border-slate-100 bg-white/95 px-4 py-3 shadow-lg backdrop-blur-xl md:hidden">
+            <div class="mx-auto mt-3 grid max-w-7xl grid-cols-4 gap-2 text-center">
+                <a href="#hero" class="rounded-2xl px-2 py-2 text-xs font-medium text-slate-700 transition hover:bg-slate-100">Home</a>
+                <a href="#services" class="rounded-2xl px-2 py-2 text-xs font-medium text-slate-700 transition hover:bg-slate-100">Services</a>
+                <a href="#feature" class="rounded-2xl px-2 py-2 text-xs font-medium text-slate-700 transition hover:bg-slate-100">About Us</a>
+                <a href="#newsletter" class="rounded-2xl px-2 py-2 text-xs font-medium text-slate-700 transition hover:bg-slate-100">Contact Us</a>
+            </div>
+        </div>
     </header>
 
-    <section class="section-hero" id="hero">
-        <div class="row group hero-section">
-            <div class="col span_1_of_2 hero-content ">
-                <h1>
-                    Revitalize Your Clothes With Expert <span>Laundary Services!</span>
-                </h1>
-                <p>From premium dry cleaning to swift wash and foid, we deliver care and convienience. Schedule a pickup
-                    and
-                    rediscover the freshness oF your clothes today!</p>
-                <button class="btn"><ion-icon name="storefront-outline"></ion-icon>Book a service today!</button>
-            </div>
-            <div class="col span_1_of_2 hero-img">
-                <img src="resources/img/image.jpg" alt="">
-            </div>
-        </div>
-        <div class="section group hero-achivements">
-            <h2 class="col span_2_of_5">Our Achievements</h2>
-            <p class="col span_1_of_5">15+ <span>Laundry services</span></p>
-            <p class="col span_1_of_5">240+ <span>Happy customers</span></p>
-            <p class="col span_1_of_5">2+ Yrs <span>Experience</span></p>
-        </div>
-    </section>
+    <main>
+        <section id="hero" class="relative overflow-hidden">
+            <div class="absolute inset-0 -z-10 bg-linear-to-br from-cyan-50 via-white to-emerald-50"></div>
+            <div class="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:px-8 lg:py-24">
+                <div class="order-2 flex flex-col justify-center lg:order-1">
+                    <span class="mb-5 inline-flex w-fit items-center gap-2 rounded-full border border-cyan-100 bg-white px-4 py-2 text-sm font-medium text-cyan-700 shadow-sm">
+                        <span class="h-2 w-2 rounded-full bg-cyan-500"></span>
+                        Reliable pickup and delivery
+                    </span>
 
-    <section class="section-services section group" id="services">
+                    <h1 class="max-w-xl text-4xl font-black tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
+                        Revitalize your clothes with expert
+                        <span class="block bg-linear-to-r from-cyan-600 via-sky-600 to-emerald-600 bg-clip-text text-transparent">
+                            laundry services
+                        </span>
+                    </h1>
 
+                    <p class="mt-6 max-w-xl text-lg leading-8 text-slate-600">
+                        From premium dry cleaning to swift wash and fold, we deliver care and convenience.
+                        Schedule a pickup and rediscover the freshness of your clothes today.
+                    </p>
 
-        <div class="row">
-            <!-- Left Section -->
-
-            <div class="col span_2_of_3 container">
-                <div class="summary-container">
-                    <div class="section-header">
-                        <h1>Our Services</h1>
-                        <p>Click On The Add To Cart Button To Add The Services To Your Cart</p>
-                    </div>
-                    <div class="divider"></div>
-
-                    <div class="services-list">
-
-                        <!-- Service Item -->
-                        <div class=" row service-item section group">
-                            <div class="service-info col span_2_of_3">
-                                <span class="service-icon">👔</span>
-                                <span class="service-name">Dry Cleaning</span>
-                                <ion-icon name="ellipse-sharp"></ion-icon>
-                                <span class="service-price">₹200.00</span>
-                            </div>
-
-                            <div class="service-action col span_1_of_3">
-                                <button class="btn btn-add ">
-                                    <strong>Add Item </strong> <ion-icon name="add-circle-outline"></ion-icon>
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="row service-item">
-                            <div class="service-info col span_2_of_3">
-                                <span class="service-icon">🧺</span>
-                                <span class="service-name">Wash & Fold</span>
-                                <ion-icon name="ellipse-sharp"></ion-icon>
-                                <span class="service-price">₹100.00</span>
-                            </div>
-
-                            <div class="service-action col span_1_of_3">
-                                <button class="btn btn-add ">
-                                    <strong>Add Item </strong> <ion-icon name="add-circle-outline"></ion-icon>
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="row service-item">
-                            <div class="service-info col span_2_of_3">
-                                <span class="service-icon">🧹</span>
-                                <span class="service-name">Ironing</span>
-                                <ion-icon name="ellipse-sharp"></ion-icon>
-                                <span class="service-price">₹30.00</span>
-                            </div>
-
-                            <div class="service-action col span_1_of_3">
-                                <button class="btn btn-add ">
-                                    <strong>Add Item </strong> <ion-icon name="add-circle-outline"></ion-icon>
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="service-item row">
-                            <div class="service-info col span_2_of_3">
-                                <span class="service-icon">💥</span>
-                                <span class="service-name">Stain Removal</span>
-                                <ion-icon name="ellipse-sharp"></ion-icon>
-                                <span class="service-price">₹500.00</span>
-                            </div>
-
-                            <div class="service-action col span_1_of_3">
-                                <button class="btn btn-add ">
-                                    <strong>Add Item </strong> <ion-icon name="add-circle-outline"></ion-icon>
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="service-item row">
-                            <div class="service-info col span_2_of_3">
-                                <span class="service-icon">🧥</span>
-                                <span class="service-name">Leather & Suede Cleaning</span>
-                                <ion-icon name="ellipse-sharp"></ion-icon>
-                                <span class="service-price">₹999.00</span>
-                            </div>
-
-                            <div class="service-action col span_1_of_3">
-                                <button class="btn btn-add ">
-                                    <strong>Add Item </strong> <ion-icon name="add-circle-outline"></ion-icon>
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="service-item row">
-                            <div class="service-info col span_2_of_3">
-                                <span class="service-icon">👰</span>
-                                <span class="service-name">Wedding Dress Cleaning</span>
-                                <ion-icon name="ellipse-sharp"></ion-icon>
-                                <span class="service-price">₹2800.00</span>
-                            </div>
-
-                            <div class="service-action col span_1_of_3">
-                                <button class="btn btn-add ">
-                                    <strong>Add Item </strong> <ion-icon name="add-circle-outline"></ion-icon>
-                                </button>
-                            </div>
-                        </div>
+                    <div class="mt-8 flex flex-wrap gap-4">
+                        <a href="#services" class="inline-flex items-center gap-2 rounded-full bg-cyan-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-cyan-600/25 transition hover:bg-cyan-700">
+                            <ion-icon name="storefront-outline"></ion-icon>
+                            Book a service today
+                        </a>
                     </div>
 
-                    <div class="section group"></div>
-                    <div class="divider"></div>
-                    <div class="cart-note">
-                        <ion-icon name="information-circle-outline"></ion-icon>
-                        <p>Add the items to the cart and book now</p>
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- Right Section -->
-            <div class="col span_1_of_3 cart-container">
-
-                <!-- Cart Summary -->
-                <div class="cart-summary container">
-
-                    <h2>Added Items</h2>
-
-                    <!-- Empty State -->
-                    <div class="cart-empty" id="emptyCart">
-
-                        <div class="cart-table-header">
-                            <span>S.No</span>
-                            <span>Service Name</span>
-                            <span>Price</span>
+                    <div class="mt-10 grid grid-cols-3 gap-4">
+                        <div class="rounded-3xl bg-white p-4 shadow-sm ring-1 ring-slate-200">
+                            <p class="text-2xl font-bold text-slate-950">15+</p>
+                            <p class="mt-1 text-sm text-slate-500">Laundry services</p>
                         </div>
-
-                        <div class="empty-content">
-                            <div class="empty-icon">
-                                <ion-icon name="cart-outline"></ion-icon>
-                            </div>
-
-                            <h3>No Items Added</h3>
-                            <p>Add items to the cart from the services bar</p>
+                        <div class="rounded-3xl bg-white p-4 shadow-sm ring-1 ring-slate-200">
+                            <p class="text-2xl font-bold text-slate-950">240+</p>
+                            <p class="mt-1 text-sm text-slate-500">Happy customers</p>
                         </div>
-
+                        <div class="rounded-3xl bg-white p-4 shadow-sm ring-1 ring-slate-200">
+                            <p class="text-2xl font-bold text-slate-950">2+ Yrs</p>
+                            <p class="mt-1 text-sm text-slate-500">Experience</p>
+                        </div>
                     </div>
-
-                    <!-- Cart Items -->
-                    <div class="cart-items" id="cartItems" style="display:none;">
-                        <table class="cart-table">
-                            <thead>
-                                <tr>
-                                    <th>S.No</th>
-                                    <th>Service Name</th>
-                                    <th>Price</th>
-                                </tr>
-                            </thead>
-
-                            <tbody>
-                                <!-- JS will append rows here -->
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <div class="total-section row section group">
-                        <span class="col span_1_of_2">Total Amount</span>
-                        <strong class="col span_1_of_2">₹0</strong>
-                    </div>
-
                 </div>
 
-                <!-- Booking Form -->
-                <div class="booking-form container">
+                <div class="relative order-1 lg:order-2">
+                    <div class="absolute -left-6 top-10 w-24 rounded-full bg-cyan-200/60 blur-3xl"></div>
+                    <div class="absolute -right-4 bottom-10 w-32 rounded-full bg-emerald-200/60 blur-3xl"></div>
+                    <div class="overflow-hidden bg-white p-3 shadow-[0_24px_80px_rgba(15,23,42,0.18)] ring-1 ring-slate-200">
+                        <img src="resources/img/image.jpg" alt="Laundry service preview" class="w-full object-fill">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                    <h3>Book Now</h3>
+        <section id="services" class="py-16 sm:py-20">
+            <div class="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-[minmax(0,1.6fr)_minmax(320px,0.9fr)] lg:items-stretch lg:px-8">
+                <div class="flex h-full flex-col rounded-4xl bg-white p-6 shadow-sm ring-1 ring-slate-200 sm:p-8">
+                    <div class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+                        <div>
+                            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-700">Services</p>
+                            <h2 class="mt-2 text-3xl font-bold text-slate-950">Our Services</h2>
+                        </div>
+                        <p class="max-w-md text-sm text-slate-500">Click the add button to place services in your cart.</p>
+                    </div>
 
-                    <form>
+                    <div class="mt-6 h-px bg-slate-200"></div>
 
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" placeholder="John Doe">
+                    <div class="services-list mt-6 flex flex-1 flex-col gap-4">
+                        <article class="flex flex-col gap-4 rounded-3xl border border-slate-200 bg-slate-50 p-5 md:flex-row md:items-center md:justify-between">
+                            <div class="flex min-w-0 flex-1 items-center gap-4">
+                                <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-cyan-100 text-2xl">👔</div>
+                                <div class="min-w-0">
+                                    <h3 class="service-name text-lg font-semibold text-slate-950">Dry Cleaning</h3>
+                                    <p class="mt-1 text-sm text-slate-500">Premium garment care</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between gap-4 md:shrink-0 md:justify-end">
+                                <span class="service-price text-lg font-bold text-slate-950">₹200.00</span>
+                                <button type="button" class="btn-add inline-flex items-center gap-2 rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-800">
+                                    <strong>Add Item</strong>
+                                    <ion-icon name="add-circle-outline"></ion-icon>
+                                </button>
+                            </div>
+                        </article>
+
+                        <article class="flex flex-col gap-4 rounded-3xl border border-slate-200 bg-slate-50 p-5 md:flex-row md:items-center md:justify-between">
+                            <div class="flex min-w-0 flex-1 items-center gap-4">
+                                <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-cyan-100 text-2xl">🧺</div>
+                                <div class="min-w-0">
+                                    <h3 class="service-name text-lg font-semibold text-slate-950">Wash & Fold</h3>
+                                    <p class="mt-1 text-sm text-slate-500">Quick everyday laundry</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between gap-4 md:shrink-0 md:justify-end">
+                                <span class="service-price text-lg font-bold text-slate-950">₹100.00</span>
+                                <button type="button" class="btn-add inline-flex items-center gap-2 rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-800">
+                                    <strong>Add Item</strong>
+                                    <ion-icon name="add-circle-outline"></ion-icon>
+                                </button>
+                            </div>
+                        </article>
+
+                        <article class="flex flex-col gap-4 rounded-3xl border border-slate-200 bg-slate-50 p-5 md:flex-row md:items-center md:justify-between">
+                            <div class="flex min-w-0 flex-1 items-center gap-4">
+                                <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-cyan-100 text-2xl">🧹</div>
+                                <div class="min-w-0">
+                                    <h3 class="service-name text-lg font-semibold text-slate-950">Ironing</h3>
+                                    <p class="mt-1 text-sm text-slate-500">Fresh, crisp finish</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between gap-4 md:shrink-0 md:justify-end">
+                                <span class="service-price text-lg font-bold text-slate-950">₹30.00</span>
+                                <button type="button" class="btn-add inline-flex items-center gap-2 rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-800">
+                                    <strong>Add Item</strong>
+                                    <ion-icon name="add-circle-outline"></ion-icon>
+                                </button>
+                            </div>
+                        </article>
+
+                        <article class="flex flex-col gap-4 rounded-3xl border border-slate-200 bg-slate-50 p-5 md:flex-row md:items-center md:justify-between">
+                            <div class="flex min-w-0 flex-1 items-center gap-4">
+                                <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-cyan-100 text-2xl">💥</div>
+                                <div class="min-w-0">
+                                    <h3 class="service-name text-lg font-semibold text-slate-950">Stain Removal</h3>
+                                    <p class="mt-1 text-sm text-slate-500">Targeted treatment</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between gap-4 md:shrink-0 md:justify-end">
+                                <span class="service-price text-lg font-bold text-slate-950">₹500.00</span>
+                                <button type="button" class="btn-add inline-flex items-center gap-2 rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-800">
+                                    <strong>Add Item</strong>
+                                    <ion-icon name="add-circle-outline"></ion-icon>
+                                </button>
+                            </div>
+                        </article>
+
+                        <article class="flex flex-col gap-4 rounded-3xl border border-slate-200 bg-slate-50 p-5 md:flex-row md:items-center md:justify-between">
+                            <div class="flex min-w-0 flex-1 items-center gap-4">
+                                <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-cyan-100 text-2xl">🧥</div>
+                                <div class="min-w-0">
+                                    <h3 class="service-name text-lg font-semibold text-slate-950">Leather & Suede Cleaning</h3>
+                                    <p class="mt-1 text-sm text-slate-500">Special fabric handling</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between gap-4 md:shrink-0 md:justify-end">
+                                <span class="service-price text-lg font-bold text-slate-950">₹999.00</span>
+                                <button type="button" class="btn-add inline-flex items-center gap-2 rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-800">
+                                    <strong>Add Item</strong>
+                                    <ion-icon name="add-circle-outline"></ion-icon>
+                                </button>
+                            </div>
+                        </article>
+
+                        <article class="flex flex-col gap-4 rounded-3xl border border-slate-200 bg-slate-50 p-5 md:flex-row md:items-center md:justify-between">
+                            <div class="flex min-w-0 flex-1 items-center gap-4">
+                                <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-cyan-100 text-2xl">👰</div>
+                                <div class="min-w-0">
+                                    <h3 class="service-name text-lg font-semibold text-slate-950">Wedding Dress Cleaning</h3>
+                                    <p class="mt-1 text-sm text-slate-500">Delicate formalwear care</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between gap-4 md:shrink-0 md:justify-end">
+                                <span class="service-price text-lg font-bold text-slate-950">₹2800.00</span>
+                                <button type="button" class="btn-add inline-flex items-center gap-2 rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-slate-800">
+                                    <strong>Add Item</strong>
+                                    <ion-icon name="add-circle-outline"></ion-icon>
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="mt-8 rounded-3xl border border-cyan-100 bg-cyan-50 px-5 py-4 text-sm text-cyan-900">
+                        <div class="flex items-center gap-2">
+                            <ion-icon name="information-circle-outline"></ion-icon>
+                            <p>Add items to the cart and book now.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="flex h-full flex-col">
+                    <div class="flex h-full flex-col rounded-4xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
+                        <div class="flex items-center justify-between">
+                            <h2 class="text-2xl font-bold text-slate-950">Added Items</h2>
+                            <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Cart</span>
                         </div>
 
-                        <div class="row">
-
-                            <div class="form-group col span_1_of_2">
-                                <label for="email">Email ID</label>
-                                <input type="email" id="email" placeholder="mailid@gmail.com">
+                        <div class="mt-6" id="emptyCart">
+                            <div class="overflow-hidden rounded-3xl border border-dashed border-slate-300 bg-slate-50">
+                                <div class="flex items-center border-b border-slate-200 px-4 py-3 text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
+                                    <span class="w-14">S.No</span>
+                                    <span class="flex-1">Service Name</span>
+                                    <span class="w-20 text-right">Price</span>
+                                </div>
+                                <div class="px-6 py-12 text-center">
+                                    <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-white text-3xl text-cyan-600 shadow-sm ring-1 ring-slate-200">
+                                        <ion-icon name="cart-outline"></ion-icon>
+                                    </div>
+                                    <h3 class="mt-4 text-lg font-semibold text-slate-950">No items added</h3>
+                                    <p class="mt-1 text-sm text-slate-500">Add services from the left panel to build your order.</p>
+                                </div>
                             </div>
-
-                            <div class="form-group col span_1_of_2">
-                                <label for="phone">Phone Number</label>
-                                <input type="tel" id="phone" placeholder="0000000000">
-                            </div>
-
                         </div>
 
-                        <button type="submit" class="book-btn">
-                            Book now
+                        <div class="hidden mt-6 overflow-hidden rounded-3xl border border-slate-200" id="cartItems">
+                            <table class="w-full text-left text-sm">
+                                <thead class="bg-slate-50 text-xs uppercase tracking-[0.2em] text-slate-500">
+                                    <tr>
+                                        <th class="w-16 px-4 py-3">S.No</th>
+                                        <th class="px-4 py-3">Service Name</th>
+                                        <th class="w-24 px-4 py-3 text-right">Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-slate-200 bg-white">
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="mt-auto flex items-center justify-between rounded-2xl bg-slate-900 px-5 py-4 text-white">
+                            <span class="text-sm font-medium text-slate-300">Total Amount</span>
+                            <strong id="cartTotal" class="text-xl">₹0</strong>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 rounded-4xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
+                        <h3 class="text-2xl font-bold text-slate-950">Book Now</h3>
+
+                        <form id="bookingForm" class="mt-6 space-y-5">
+                            <div class="space-y-2">
+                                <label for="name" class="text-sm font-medium text-slate-700">Full Name</label>
+                                <input type="text" id="name" placeholder="John Doe"
+                                    class="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm outline-none transition placeholder:text-slate-400 focus:border-cyan-500 focus:bg-white focus:ring-4 focus:ring-cyan-100">
+                            </div>
+
+                            <div class="grid gap-4 sm:grid-cols-2">
+                                <div class="space-y-2">
+                                    <label for="email" class="text-sm font-medium text-slate-700">Email ID</label>
+                                    <input type="email" id="email" placeholder="mailid@gmail.com"
+                                        class="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm outline-none transition placeholder:text-slate-400 focus:border-cyan-500 focus:bg-white focus:ring-4 focus:ring-cyan-100">
+                                </div>
+                                <div class="space-y-2">
+                                    <label for="phone" class="text-sm font-medium text-slate-700">Phone Number</label>
+                                    <input type="tel" id="phone" placeholder="0000000000"
+                                        class="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm outline-none transition placeholder:text-slate-400 focus:border-cyan-500 focus:bg-white focus:ring-4 focus:ring-cyan-100">
+                                </div>
+                            </div>
+
+                            <button type="submit"
+                                class="w-full rounded-full bg-cyan-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-cyan-600/25 transition hover:bg-cyan-700">
+                                Book now
+                            </button>
+                        </form>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <section id="feature" class="bg-slate-950 py-16 text-white sm:py-20">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="max-w-2xl">
+                    <p class="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">Why choose us</p>
+                    <h2 class="mt-2 text-3xl font-bold sm:text-4xl">Built for speed, care, and reliability</h2>
+                </div>
+
+                <div class="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+                    <article class="rounded-[1.75rem] border border-white/10 bg-white/5 p-6 backdrop-blur">
+                        <img src="resources/img/image.jpg" alt="Premium services" class="h-44 w-full rounded-2xl object-cover">
+                        <h3 class="mt-5 text-xl font-semibold">Premium Services</h3>
+                        <p class="mt-3 text-sm leading-7 text-slate-300">Elevate your wardrobe with meticulous dry cleaning that keeps garments looking new.</p>
+                    </article>
+                    <article class="rounded-[1.75rem] border border-white/10 bg-white/5 p-6 backdrop-blur">
+                        <img src="resources/img/image.jpg" alt="Quick support" class="h-44 w-full rounded-2xl object-cover">
+                        <h3 class="mt-5 text-xl font-semibold">Quick Support</h3>
+                        <p class="mt-3 text-sm leading-7 text-slate-300">Prompt service and responsive support make the experience smooth and worry-free.</p>
+                    </article>
+                    <article class="rounded-[1.75rem] border border-white/10 bg-white/5 p-6 backdrop-blur">
+                        <img src="resources/img/image.jpg" alt="Hassle free delivery" class="h-44 w-full rounded-2xl object-cover">
+                        <h3 class="mt-5 text-xl font-semibold">Hassle Free Delivery</h3>
+                        <p class="mt-3 text-sm leading-7 text-slate-300">Convenient pickup and delivery options keep everything on your schedule.</p>
+                    </article>
+                    <article class="rounded-[1.75rem] border border-white/10 bg-white/5 p-6 backdrop-blur">
+                        <img src="resources/img/image.jpg" alt="Affordable prices" class="h-44 w-full rounded-2xl object-cover">
+                        <h3 class="mt-5 text-xl font-semibold">Affordable Prices</h3>
+                        <p class="mt-3 text-sm leading-7 text-slate-300">Exceptional care without the premium price tag, so laundry day stays stress-free.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="newsletter" class="border-y border-slate-200 bg-white py-16">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                    <div class="grid gap-6 rounded-4xl bg-slate-50 p-6 ring-1 ring-slate-200 md:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)_minmax(0,1fr)] md:items-center">
+                        <div class="md:pr-4">
+                            <p class="max-w-md text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">Subscribe to our newsletter.</p>
+                            <p class="mt-3 max-w-md text-sm leading-6 text-slate-500">Get updates on offers, service launches, and pickup availability.</p>
+                        </div>
+                        <div class="grid gap-4 md:col-span-2 md:grid-cols-2">
+                        <input type="text" id="newsletterName" name="name" placeholder="Full name"
+                            class="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none transition placeholder:text-slate-400 focus:border-cyan-500 focus:ring-4 focus:ring-cyan-100">
+                        <input type="email" id="newsletterEmail" name="email" placeholder="Email"
+                            class="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none transition placeholder:text-slate-400 focus:border-cyan-500 focus:ring-4 focus:ring-cyan-100">
+                        <button type="button" id="newsletterSubscribe" class="w-full rounded-full bg-slate-900 px-4 py-3 text-sm font-semibold text-white transition hover:bg-slate-800 md:col-span-2">
+                            Subscribe
                         </button>
-
-                    </form>
-
-                </div>
-
-            </div>
-        </div>
-
-
-    </section>
-
-    <section class="section-feature section group" id="feature">
-        <div class="row">
-            <div class="feature-card col span_1_of_4">
-                <img src="resources/img/image.jpg" alt="premium services">
-                <strong>Premium Services</strong>
-                <span>
-                    Elevate your wardrobe with our meticulous dry cleaning,
-                    ensuring garments look and feel as good as new.
-                </span>
-            </div>
-            <div class="feature-card col span_1_of_4">
-                <img src="resources/img/image.jpg" alt="premium services">
-                <strong>Quick Support</strong>
-                <span>We're committed to providing prompt solutions to ensure
-                    your experience is smooth and worry-free.</span>
-            </div>
-            <div class="feature-card col span_1_of_4">
-                <img src="resources/img/image.jpg" alt="premium services">
-                <strong>Hassle Free Delivery</strong>
-                <span>Enjoy seamless service with our convenient pickup and
-                    delivery options, tailored to your schedule.</span>
-            </div>
-            <div class="feature-card col span_1_of_4">
-                <img src="resources/img/image.jpg" alt="premium services">
-                <strong>Affordable Prices</strong>
-                <span>Experience exceptional care without breaking the bank –
-                    our affordable prices make laundry day stress-free.</span>
-            </div>
-        </div>
-    </section>
-    <section class="section-newsletter section group" id="newsletter">
-        <div class="row">
-            <div class="col span_1_of_3 subscribe-text">
-                <Strong>Subscribe to our newsletter.</Strong>
-            </div>
-            <div class="col span_1_of_3 subscribe-div">
-                <input type="text" name="name" placeholder="Full name">
-                <input type="button" class="sub-btn" value="Subscribe">
-            </div>
-            <div class="col span_1_of_3 email-div">
-                <input type="email" name="email" placeholder="Email">
-            </div>
-        </div>
-    </section>
-
-    <section class="section-footer section group">
-        <div class="row">
-            <div class="col span_1_of_4">
-                <div class="logo">
-                    <img src="resources/img/image.jpg" alt="logo">
-                </div>
-                <div class="footer-aboutus">
-
-                    <strong>About Us</strong>
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-                </div>
-            </div>
-            <div class="col span_1_of_4">
-                <div class="footer-links">
-                    <strong>Important Links</strong>
-                    <a href="#">About Us</a>
-                    <a href="#">Contact Us</a>
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Use</a>
-                    <a href="#">Refund Policy</a>
-                </div>
-            </div>
-            <div class="col span_1_of_4">
-                <div class="footer-contact">
-                    <strong>Contact</strong>
-                    <a href="mailto:someone@example.com">someone@example.com</a>
-                    <a href="tel:+911234567890">+911234567890</a>
-                </div>
-            </div>
-            <div class="col span_1_of_4">
-                <div class="footer-social-links">
-                    <strong>
-                        Follow us
-                    </strong>
-                    <div>
-                        <a href="#" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
-                        <a href="#" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
-                        <a href="#" target="_blank"><ion-icon name="logo-x"></ion-icon></a>
-                        <a href="#" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
                     </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
+    <footer class="bg-slate-950 py-16 text-white">
+        <div class="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-4 lg:px-8">
+            <div>
+                <div class="flex items-center gap-3">
+                    <img src="resources/img/image.jpg" alt="logo" class="h-11 w-11 rounded-2xl object-cover">
+                    <div>
+                        <p class="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">FreshFold</p>
+                        <p class="text-xs text-slate-400">Laundry service</p>
+                    </div>
+                </div>
+                <p class="mt-4 max-w-xs text-sm leading-7 text-slate-300">Reliable laundry and dry cleaning with quick turnaround and simple booking.</p>
+            </div>
 
+            <div>
+                <h3 class="text-sm font-semibold uppercase tracking-[0.2em] text-slate-400">Important Links</h3>
+                <div class="mt-4 grid gap-3 text-sm text-slate-300">
+                    <a href="#" class="transition hover:text-white">About Us</a>
+                    <a href="#" class="transition hover:text-white">Contact Us</a>
+                    <a href="#" class="transition hover:text-white">Privacy Policy</a>
+                    <a href="#" class="transition hover:text-white">Terms of Use</a>
+                    <a href="#" class="transition hover:text-white">Refund Policy</a>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-sm font-semibold uppercase tracking-[0.2em] text-slate-400">Contact</h3>
+                <div class="mt-4 grid gap-3 text-sm text-slate-300">
+                    <a href="mailto:someone@example.com" class="transition hover:text-white">someone@example.com</a>
+                    <a href="tel:+911234567890" class="transition hover:text-white">+911234567890</a>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-sm font-semibold uppercase tracking-[0.2em] text-slate-400">Follow us</h3>
+                <div class="mt-4 flex items-center gap-3 text-2xl">
+                    <a href="#" target="_blank" class="rounded-full bg-white/5 p-3 transition hover:bg-white/10"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#" target="_blank" class="rounded-full bg-white/5 p-3 transition hover:bg-white/10"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#" target="_blank" class="rounded-full bg-white/5 p-3 transition hover:bg-white/10"><ion-icon name="logo-x"></ion-icon></a>
+                    <a href="#" target="_blank" class="rounded-full bg-white/5 p-3 transition hover:bg-white/10"><ion-icon name="logo-youtube"></ion-icon></a>
                 </div>
             </div>
         </div>
-    </section>
+    </footer>
+
+    <div id="toast" class="pointer-events-none fixed bottom-6 left-1/2 z-50 hidden -translate-x-1/2 rounded-full bg-slate-950 px-5 py-3 text-sm font-medium text-white shadow-lg shadow-slate-950/25"></div>
+    <script src="resources/js/app.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
 </body>
