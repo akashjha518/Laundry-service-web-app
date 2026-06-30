@@ -10,7 +10,7 @@ pnpm-debug.log*
 # Environment files
 .env
 .env.local
-resources/js/runtime-config.js
+# resources/js/runtime-config.js
 
 # macOS
 .DS_Store
