@@ -1,17 +1,18 @@
 # Laundry Service Web App
 
-A responsive single-page laundry service landing page built with HTML, Tailwind CSS, and vanilla JavaScript.
+A simple responsive laundry service website made with HTML, Tailwind CSS, and vanilla JavaScript.
 
-## Overview
+## What This Project Does
 
-This project presents a branded laundry service experience for "FreshFold" with:
+This project shows a laundry brand called `FreshFold` and includes:
 
-- Hero section with call to action
-- Services showcase
-- Feature highlights
-- Newsletter signup form
-- Footer with contact and social links
-- Cart, booking validation, and EmailJS booking email support
+- A hero section with a main call to action
+- A services section with add/remove cart buttons
+- A cart summary with total price
+- A booking form
+- EmailJS support for sending booking details
+- A newsletter form
+- A footer with contact and social links
 
 ## Tech Stack
 
@@ -33,6 +34,7 @@ resources/
   img/
   js/
     app.js
+    runtime-config.js
 vendors/
   css/
     input.css
@@ -40,7 +42,7 @@ vendors/
 package.json
 ```
 
-## Getting Started
+## How To Run
 
 ### 1. Install dependencies
 
@@ -54,81 +56,110 @@ npm install
 npm run build:css
 ```
 
-### 3. Watch CSS during development
-
-```bash
-npm run watch:css
-```
-
-### 4. Open the app
+### 3. Open the website
 
 Open `index.html` in your browser.
 
-### 5. Set up EmailJS
+## EmailJS Setup
 
-Edit `resources/js/runtime-config.js` and put your EmailJS values there:
+The EmailJS values are stored in `resources/js/runtime-config.js`.
 
 ```js
 window.__EMAILJS_CONFIG__ = {
-  serviceId: 'your_service_id',
-  templateId: 'your_template_id',
-  publicKey: 'your_public_key',
+  serviceId: "your_service_id",
+  templateId: "your_template_id",
+  publicKey: "your_public_key"
 };
 ```
 
-The page loads `resources/js/runtime-config.js` before `app.js`, so the booking form can read the settings directly.
-
-The booking form sends these fields to EmailJS:
+The booking form sends these values to EmailJS:
 
 - `user_name`
 - `user_email`
 - `user_phone`
 - `service_count`
 - `service_list`
+- `order_summary`
+- `orders`
 - `total_amount`
+- `to_email`
+- `reply_to`
+- `logo_url`
 
-If the EmailJS values are missing, the form will show a message instead of pretending the email was sent.
+The EmailJS template should use:
 
-## Available Scripts
+- `To Email`: `{{to_email}}`
+- `Reply To`: `{{reply_to}}`
 
-- `npm run build:css` - Compiles `vendors/css/input.css` into `vendors/css/output.css`
-- `npm run watch:css` - Rebuilds the Tailwind CSS output whenever the input file changes
+The logo can be shown using:
+
+- `{{logo_url}}`
 
 ## Features
 
 - Responsive navigation for desktop and mobile
-- Service cards with add/remove cart actions
-- Cart summary with total price calculation
-- Booking form validation
-- EmailJS booking submission
-- Thank-you message after booking success
-- Newsletter subscription validation
-- Toast notifications for user feedback
+- Service cards with add and remove buttons
+- Live cart total update
+- Form validation before sending booking data
+- EmailJS booking message
+- Newsletter validation
+- Toast messages for feedback
+
+## Challenges Faced
+
+### 1. The cart needed to update without reloading the page
+
+At first, the cart was hard to manage because the selected items had to stay in sync with the buttons.
+
+How I fixed it:
+
+- I stored the selected services in a `Map`
+- I updated the button style when an item was added or removed
+- I re-rendered the cart every time the selection changed
+
+### 2. EmailJS returned a 422 error
+
+This happened because the recipient field in the EmailJS template was empty or mismatched.
+
+How I fixed it:
+
+- I made the code send `to_email`
+- I used `{{to_email}}` in the EmailJS template
+- I also used `reply_to` so replies can go back to the user
+
+### 3. The booking email needed to look cleaner
+
+The first email layout was too plain and the order items were not shown in a neat way.
+
+How I fixed it:
+
+- I sent `orders` from JavaScript as structured data
+- I changed the template to use a table for the order summary
+- I added `order_summary` for simpler text fallback
+
+### 4. The logo did not show inside the email
+
+Local image paths do not work well in emails.
+
+How I fixed it:
+
+- I used a public logo URL from the hosted site
+- I passed it as `logo_url` to the template
+
 
 ## Notes
 
-- The project is frontend-only; there is no backend or database configured yet.
-- The current interactive behavior is handled in `resources/js/app.js`.
-- If you change styles in `vendors/css/input.css`, rebuild `vendors/css/output.css` before refreshing the page.
-- EmailJS settings now live in `resources/js/runtime-config.js`, so there is no `.env` or config-generation step.
-
-## Development Notes
-
-I built the booking flow in smaller steps so the logic is easy to follow:
-
-1. Start with the static layout and responsive sections.
-2. Add the cart with simple add and remove buttons.
-3. Validate the form fields before sending any booking request.
-4. Connect the booking form to EmailJS.
-5. Show a visible thank-you message after the email is sent.
-
-The JavaScript also includes short comments near the cart and booking logic so the flow is easier to study.
+- This project is frontend-only.
+- There is no backend or database yet.
+- The main interactive logic is in `resources/js/app.js`.
+- If you change styles in `vendors/css/input.css`, rebuild `vendors/css/output.css`.
 
 ## Customization
 
-You can update the branding, services, contact details, and images by editing:
+You can change the branding, services, text, and images by editing:
 
 - `index.html`
 - `resources/js/app.js`
+- `resources/js/runtime-config.js`
 - `resources/img/`
 - `vendors/css/input.css`

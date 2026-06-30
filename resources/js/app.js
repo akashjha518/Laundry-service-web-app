@@ -153,6 +153,31 @@ function getSelectedServiceNames() { // Build a list of selected service names.
     return names; // Return the full list.
 } // End of service-name helper.
 
+function buildOrderSummary() { // Create a readable list of selected services and prices.
+    // Build a simple plain-text summary so the email template can show each item clearly.
+    const lines = []; // Start with an empty list of lines.
+
+    selectedServices.forEach((item) => { // Loop through each selected service.
+        lines.push(`${item.name} - ${formatPrice(item.price)}`); // Add one line per service with its price.
+    }); // End of selected service loop.
+
+    return lines.join('\n'); // Put each item on a new line.
+} // End of order summary helper.
+
+function buildOrderRows() { // Create a structured list for the email table.
+    // Build an array of objects so the template can render a clean table.
+    const rows = []; // Start with an empty list of rows.
+
+    selectedServices.forEach((item) => { // Loop through every selected service.
+        rows.push({ // Add one table row object.
+            name: item.name, // Store the service name.
+            price: formatPrice(item.price), // Store the formatted price.
+        }); // End of row object.
+    }); // End of selected service loop.
+
+    return rows; // Return the full list of table rows.
+} // End of order rows helper.
+
 function validateBookingFormData(data) { // Check if the booking form is valid.
     // Check each requirement one by one so errors are easy to understand.
     if (selectedServices.size === 0) { // If nothing is in the cart...
@@ -182,6 +207,7 @@ function canSendBookingEmail() { // Check whether EmailJS is ready to use.
 function buildBookingEmailData(data) { // Build the EmailJS template data.
     // Prepare the data object that EmailJS will insert into the template.
     const serviceNames = getSelectedServiceNames(); // Get the list of selected service names.
+    const logoUrl = 'https://fresh-fold.netlify.app/resources/img/logo.png'; // Use the live site URL so the email can load the logo.
 
     return { // Return an object with the values the template expects.
         user_name: data.name, // Send the user's name.
@@ -189,9 +215,12 @@ function buildBookingEmailData(data) { // Build the EmailJS template data.
         user_phone: data.phone, // Send the user's phone number.
         service_count: selectedServices.size, // Send how many services were selected.
         service_list: serviceNames.join(', '), // Turn the list into a readable string.
+        order_summary: buildOrderSummary(), // Send a line-by-line summary with item names and prices.
+        orders: buildOrderRows(), // Send table rows for the email template.
         total_amount: cartTotal ? cartTotal.textContent : '₹0', // Send the cart total text.
         to_email: data.email, // Send the user's email as the recipient.
         reply_to: data.email, // Let the receiver reply to the user's email.
+        logo_url: logoUrl, // Send the logo image URL so the email can display the brand.
     }; // End of EmailJS template data object.
 } // End of template data helper.
 

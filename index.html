@@ -2,16 +2,21 @@
 <html lang="en">
 
 <head>
+    <!-- Basic page setup and metadata. -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laundry Service Web App</title>
+    <!-- Google Material Icons for small UI icons. -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Main custom CSS file for page styling. -->
     <link rel="stylesheet" href="resources/css/style.css">
     <!-- <link rel="stylesheet" href="resources/css/responsive.css"> -->
+    <!-- Compiled Tailwind output used by the layout. -->
     <link rel="stylesheet" href="vendors/css/output.css">
 </head>
 
 <body class="bg-slate-50 text-slate-900 font-sans">
+    <!-- Top navigation bar and brand area. -->
     <header class="sticky top-0 z-50 border-b border-white/60 bg-white/85 backdrop-blur-xl">
         <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
             <a href="#hero" class="flex items-center gap-3">
@@ -52,6 +57,7 @@
     </header>
 
     <main>
+        <!-- Hero section: main welcome area at the top of the page. -->
         <section id="hero" class="relative overflow-hidden">
             <div class="absolute inset-0 -z-10 bg-linear-to-br from-cyan-50 via-white to-emerald-50"></div>
             <div class="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:px-8 lg:py-24">
@@ -109,6 +115,7 @@
             </div>
         </section>
 
+        <!-- Services section: users can add items to the cart here. -->
         <section id="services" class="py-16 sm:py-20">
             <div
                 class="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-[minmax(0,1.6fr)_minmax(320px,0.9fr)] lg:items-stretch lg:px-8">
@@ -262,6 +269,7 @@
                     </div>
                 </div>
 
+                <!-- Right-side panel: cart summary and booking form. -->
                 <aside class="flex h-full flex-col">
                     <div class="flex h-full flex-col rounded-4xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
                         <div class="flex items-center justify-between">
@@ -350,6 +358,7 @@
             </div>
         </section>
 
+        <!-- Feature section: explains why the service is useful. -->
         <section id="feature" class="bg-slate-950 py-16 text-white sm:py-20">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div class="max-w-2xl">
@@ -390,6 +399,7 @@
             </div>
         </section>
 
+        <!-- Newsletter section: simple email capture form. -->
         <section id="newsletter" class="border-y border-slate-200 bg-white py-16">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div
@@ -415,6 +425,7 @@
         </section>
     </main>
 
+    <!-- Footer with logo, links, contact info, and social icons. -->
     <footer class="bg-slate-950 py-16 text-white">
         <div class="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-4 lg:px-8">
             <div>
@@ -468,12 +479,17 @@
         </div>
     </footer>
 
+    <!-- Toast message container used by app.js for quick feedback. -->
     <div id="toast"
         class="pointer-events-none fixed bottom-6 left-1/2 z-50 hidden -translate-x-1/2 rounded-full bg-slate-950 px-5 py-3 text-sm font-medium text-white shadow-lg shadow-slate-950/25">
     </div>
+    <!-- Load runtime EmailJS config before the main app script. -->
     <script src="resources/js/runtime-config.js"></script>
+    <!-- EmailJS browser SDK. -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- Main JavaScript file for cart, booking, and newsletter actions. -->
     <script src="resources/js/app.js"></script>
+    <!-- Ionicons used for the small icon graphics on the page. -->
     <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
 </body>

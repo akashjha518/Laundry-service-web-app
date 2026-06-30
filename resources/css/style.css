@@ -1,29 +1,33 @@
-/* Desktop navigation hover states */
+/* Navigation link styling for desktop screens. */
 .nav-link {
     border-bottom: 2px solid transparent;
     transition: border-color 0.2s ease, color 0.2s ease;
 }
 
+/* Show a clear hover state when the user points at a menu link. */
 .nav-link:hover {
     border-bottom-color: #2dd4bf;
     color: #0f766e;
 }
 
-/* Username button hover state */
+/* Style for the user button in the top navigation. */
 .nav-user {
     transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
+/* Change the user button color on hover. */
 .nav-user:hover {
     background-color: #2dd4bf;
 }
 
+/* Extra spacing for the desktop navigation row on large screens. */
 @media (min-width: 1024px) {
     header nav > div.hidden.items-center.gap-8.md\:flex {
         gap: 3.5rem;
     }
 }
 
+/* Small adjustment for the mobile navigation panel spacing. */
 @media (max-width: 767.98px) {
     header > div.border-t.border-slate-100.bg-white\/95.px-4.py-3.shadow-lg.backdrop-blur-xl.md\:hidden > div {
         margin-top: -0.25rem;

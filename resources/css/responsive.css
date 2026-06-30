@@ -1,16 +1,21 @@
+/* Very large screens: keep the hero centered and readable. */
 @media only screen and (max-width:1800px) {
+    /* Center the hero content on wide layouts. */
     .hero-section {
         justify-content: center;
     }
 
+    /* Make the hero heading slightly smaller on large screens. */
     .hero-content h1 {
         font-size: 270%;
     }
 
+    /* Keep the highlighted word in a bright blue color. */
     .hero-content h1 span {
         color: rgb(0, 187, 255);
     }
 
+    /* Improve spacing and readability for the hero paragraph. */
     .hero-content p {
         font-size: 100%;
         letter-spacing: 1%;
@@ -28,6 +33,7 @@
 
     }
 
+    /* Center the text inside the achievements section. */
     .hero-achivements h2,
     .hero-achivements p {
         text-align: center;
@@ -44,11 +50,13 @@
         font-size: 25px;
     }
 
+    /* Make the small text inside the achievement cards easier to read. */
     .hero-achivements p span {
         font-size: 10px;
         display: block;
     }
 
+    /* Scale the service and cart text for this breakpoint. */
     .service-icon,
     .service-name,
     .service-price,
@@ -56,38 +64,44 @@
         font-size: 18px;
     }
 
+    /* Make the cart header fit better on medium-wide screens. */
     .cart-table-header {
         padding: 10px 14px;
         font-size: 85%;
     }
 
+    /* Empty cart title styling. */
     .empty-content h3 {
         margin: 0;
         font-size: 17px;
         font-weight: 500;
     }
 
+    /* Empty cart description styling. */
     .empty-content p {
         margin: 0;
         color: #888;
         font-size: 12px;
     }
 
-
+    /* Keep the total section compact. */
     .total-section span,
     .total-section strong {
         font-size: 70%;
     }
 
+    /* Reduce the booking form title size. */
     .booking-form h3 {
         font-size: 75%;
     }
 
+    /* Make form inputs more compact. */
     .form-group input {
         width: 90%;
         padding: 5%;
     }
 
+    /* Make the booking button fill the available width. */
     .book-btn {
         width: 100%;
         padding: 5%;
@@ -95,19 +109,24 @@
     }
 }
 
+/* Smaller laptop and tablet screens. */
 @media only screen and (max-width:1245px) {
+    /* Add breathing room around the hero section. */
     .hero-section {
         margin: 5%;
     }
 
+    /* Scale the main hero heading down a little. */
     .hero-content h1 {
         font-size: 250%;
     }
 
+    /* Keep the highlighted word blue. */
     .hero-content h1 span {
         color: rgb(0, 187, 255);
     }
 
+    /* Make the hero image fit nicely. */
     .hero-img img {
         height: 300px;
         width: auto;
@@ -121,6 +140,7 @@
         margin-top: 20px;
     }
 
+    /* Keep the achievement box visible and readable. */
     .hero-achivements {
         margin-top: 5%;
         width: 100%;
@@ -131,6 +151,7 @@
 
     }
 
+    /* Center text in the achievement cards. */
     .hero-achivements h2,
     .hero-achivements p {
         text-align: center;
@@ -147,11 +168,13 @@
         font-size: 25px;
     }
 
+    /* Make the small span text easier to scan. */
     .hero-achivements p span {
         font-size: 10px;
         display: block;
     }
 
+    /* Tweak the empty-cart text sizes. */
     .empty-content h3 {
         margin: 0;
         font-size: 15px;
@@ -164,47 +187,61 @@
         font-size: 10px;
     }
 
+    /* Smaller cart header text for this breakpoint. */
     .cart-table-header {
         font-size: 65%;
     }
 
+    /* Reduce the cart summary title size. */
     .cart-summary h2 {
         font-size: 15px;
     }
 
+    /* Shrink the empty-cart icon. */
     .empty-icon {
         width: 40px;
         height: 40px;
         border: 2px solid #555;
     }
 
+    /* Shrink the icon inside the empty-cart circle. */
     .empty-icon ion-icon {
         font-size: 85%;
         color: #555;
     }
 
+    /* Keep the empty cart area compact. */
     .empty-content {
         min-height: 130px
     }
 
+    /* Make labels smaller so they fit better. */
     .form-group label {
         font-size: 60%;
     }
 
+    /* Add spacing above the booking form. */
     .booking-form {
         margin-top: 4%;
     }
 
+    /* Scale newsletter heading text. */
     .subscribe-text strong {
         font-size: 175%;
 
     }
+
+    /* Make newsletter input text readable. */
     .subscribe-div input {
         font-size: 100%;
     }
+
+    /* Keep the email input consistent. */
     .email-div input {
         font-size: 100%;
     }
+
+    /* Reduce spacing around the newsletter section. */
     .section-newsletter {
     margin-top: 3%;
     padding: 3%;
@@ -212,8 +249,10 @@
 
 }
 
+/* Tablet-sized screens where the layout starts stacking. */
 @media only screen and (max-width:1078px) {
 
+    /* Smaller service text for tighter layouts. */
     .service-icon,
     .service-name,
     .service-price,
@@ -221,10 +260,12 @@
         font-size: 15px;
     }
 
+    /* Smaller table header text. */
     .cart-table-header {
         font-size: 55%;
     }
 
+    /* Adjust the empty-cart title size. */
     .empty-content h3 {
         margin: 0;
         font-size: 12px;
@@ -237,59 +278,74 @@
         font-size: 9px;
     }
 
+    /* Make the add button fit better in narrow areas. */
     .service-action .btn {
         /* margin-top: 20px; */
         padding: 4%;
         font-size: 12px;
     }
 
+    /* Reduce empty icon size again for smaller widths. */
     .empty-icon {
         width: 30px;
         height: 30px;
         border: 2px solid #555;
     }
 
+    /* Shrink the icon inside the empty state. */
     .empty-icon ion-icon {
         font-size: 75%;
         color: #555;
     }
 
+    /* Keep the empty cart compact. */
     .empty-content {
         min-height: 100px
     }
 
+    /* Add spacing above the booking form. */
     .booking-form {
         margin-top: 4%;
 
     }
 
+    /* Add top padding to the booking heading. */
     .booking-form h3 {
         padding: 2% 0;
     }
 
+    /* Make form inputs comfortable to tap. */
     .form-group input {
         padding: 4%;
     }
 
+    /* Keep newsletter headline readable. */
     .subscribe-text strong {
         font-size: 150%;
 
     }
+
+    /* Keep newsletter input text readable. */
     .subscribe-div input {
         font-size: 100%;
     }
+
+    /* Keep email input text readable. */
     .email-div input {
         font-size: 100%;
     }
+
+    /* Tighten newsletter spacing. */
     .section-newsletter {
     margin-top: 3%;
     padding: 3%;
     }
 }
 
+/* Mobile and small tablet layout. */
 @media only screen and (max-width:930px) {
 
-    /* Left and Right section */
+    /* Stack the two main columns into one column. */
     .section-services > .row {
         display: flex;
         flex-direction: column;
@@ -304,7 +360,7 @@
         float: none !important;
     }
 
-    /* Keep every service in one line */
+    /* Keep each service card compact on mobile. */
     .services-list .service-item{
         display:flex;
         justify-content:space-between;
@@ -314,6 +370,7 @@
         margin:0;
     }
 
+    /* Keep the service info aligned and wrapped nicely. */
     .service-info{
         display:flex;
         align-items:center;
@@ -322,26 +379,30 @@
         gap:6px;
     }
 
+    /* Keep service text readable. */
     .service-name{
         font-size:18px;
     }
 
+    /* Keep the price near the action button. */
     .service-price{
         margin-left:5px;
         font-size:18px;
         font-weight:600;
     }
 
+    /* Let the action area size itself naturally. */
     .service-action{
         width:auto !important;
     }
 
+    /* Make the add button large enough to tap. */
     .btn-add{
         width:170px;
         height:50px;
     }
 
-    /* Cart & Booking */
+    /* Make cart and booking sections fill the width. */
     .cart-container{
         margin-top:25px;
     }
@@ -351,7 +412,7 @@
         width:100%;
     }
 
-    /* Form */
+    /* Stack the form fields vertically. */
     .booking-form .row{
         display:flex;
         flex-direction:column;
@@ -365,30 +426,37 @@
     }
 }
 
+/* Very small phone screens. */
 @media only screen and (max-width:600px){
 
+    /* Stack each service card vertically. */
     .service-item{
         flex-direction:column;
         align-items:flex-start;
     }
 
+    /* Let the service info use the full width. */
     .service-info{
         width:100%;
     }
 
+    /* Make the action area full width. */
     .service-action{
         width:100% !important;
     }
 
+    /* Make the add button fill the card. */
     .btn-add{
         width:100%;
     }
 
+    /* Put the price on its own line for clarity. */
     .service-price{
         display:block;
         margin-top:8px;
     }
 
+    /* Reduce the hero title size on small screens. */
     .section-header h1{
         font-size:32px;
     }
